@@ -3,7 +3,7 @@
   tasks:
   - name: Extracting file from jenkins workspace to target host.
     copy:
-      src: /var/lib/jenkins/workspace/Deploy_Job "{{ BUILD_TAG }}"
+      src: /var/lib/jenkins/workspace/Deploy_Job/ "{{ BUILD_TAG }}"
       dest: /home/ubuntu/project/temp/
   - name: unzip the extracted file
     shell: unzip "{{ BUILD_TAG }}"
