@@ -10,7 +10,7 @@
     shell: unzip /home/ubuntu/project/temp/"{{ BUILD_TAG }}" -d /home/ubuntu/project/temp/project_files
     
   - name: Command to move extracted folder
-    cmd: cp -r /home/ubuntu/project/temp/project_files/* /home/ubuntu/project/project_files
+    shell: cp -r /home/ubuntu/project/temp/project_files/* /home/ubuntu/project/project_files
   
   - name: Command to clear /home/ubuntu/project/temp folder
     shell: rm -rf /home/ubuntu/project/temp/*
