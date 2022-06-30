@@ -6,4 +6,4 @@
       src: "{{ BUILD_TAG }}"
       dest: /home/ubuntu/project/temp/
   - name: unzip the extracted file
-    shell: unzip /home/ubuntu/project/temp/"{{ BUILD_TAG }}" -d /home/ubuntu/project/temp/
+    shell: unzip /home/ubuntu/project/temp/"{{ BUILD_TAG }}" -d /home/ubuntu/project/temp/project_files
